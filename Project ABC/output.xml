@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220206 01:27:40.482" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220206 23:05:01.225" rpa="false" schemaversion="2">
 <suite id="s1" name="projetoABC" source="C:\Users\LFSpanhol\Documents\GitHub\robot-framework\Project ABC\projetoABC.robot">
 <test id="s1-t1" name="TC01: Cadastro de usuário">
 <kw name="Conectar a API" library="resourseProjectoABC" type="SETUP">
@@ -7,62 +7,63 @@
 <arg>TesteApi</arg>
 <arg>${URL_API}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20220206 01:27:40.927" level="INFO">Creating Session using : alias=TesteApi, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20220206 01:27:40.927" endtime="20220206 01:27:40.927"/>
+<msg timestamp="20220206 23:05:01.757" level="INFO">Creating Session using : alias=TesteApi, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20220206 23:05:01.757" endtime="20220206 23:05:01.757"/>
 </kw>
-<status status="PASS" starttime="20220206 01:27:40.927" endtime="20220206 01:27:40.927"/>
+<status status="PASS" starttime="20220206 23:05:01.757" endtime="20220206 23:05:01.757"/>
 </kw>
 <kw name="Cadastrar um usuário no sistema" library="resourseProjectoABC">
 <kw name="Criar usuario para o sistema" library="resourseProjectoABC">
 <kw name="Name" library="FakerLibrary">
 <var>${RANDOM_NOME}</var>
 <doc>:example 'John Doe'</doc>
-<msg timestamp="20220206 01:27:40.929" level="INFO">${RANDOM_NOME} = Dr. Enzo Nascimento</msg>
-<status status="PASS" starttime="20220206 01:27:40.928" endtime="20220206 01:27:40.929"/>
+<msg timestamp="20220206 23:05:01.757" level="INFO">${RANDOM_NOME} = Vitor Hugo da Mata</msg>
+<status status="PASS" starttime="20220206 23:05:01.757" endtime="20220206 23:05:01.757"/>
 </kw>
 <kw name="Job" library="FakerLibrary">
 <var>${RANDOM_JOB}</var>
-<msg timestamp="20220206 01:27:40.930" level="INFO">${RANDOM_JOB} = Médico cirurgião</msg>
-<status status="PASS" starttime="20220206 01:27:40.929" endtime="20220206 01:27:40.930"/>
+<msg timestamp="20220206 23:05:01.757" level="INFO">${RANDOM_JOB} = Chaveiro</msg>
+<status status="PASS" starttime="20220206 23:05:01.757" endtime="20220206 23:05:01.757"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${USUARIO}</var>
 <arg>Nome=${RANDOM_NOME}</arg>
 <arg>Job=${RANDOM_JOB}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220206 01:27:40.931" level="INFO">${USUARIO} = {'Nome': 'Dr. Enzo Nascimento', 'Job': 'Médico cirurgião'}</msg>
-<status status="PASS" starttime="20220206 01:27:40.930" endtime="20220206 01:27:40.931"/>
+<msg timestamp="20220206 23:05:01.757" level="INFO">${USUARIO} = {'Nome': 'Vitor Hugo da Mata', 'Job': 'Chaveiro'}</msg>
+<status status="PASS" starttime="20220206 23:05:01.757" endtime="20220206 23:05:01.757"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${USUARIO}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20220206 01:27:40.933" level="INFO">${USUARIO} = {'Nome': 'Dr. Enzo Nascimento', 'Job': 'Médico cirurgião'}</msg>
-<status status="PASS" starttime="20220206 01:27:40.931" endtime="20220206 01:27:40.933"/>
+<msg timestamp="20220206 23:05:01.757" level="INFO">${USUARIO} = {'Nome': 'Vitor Hugo da Mata', 'Job': 'Chaveiro'}</msg>
+<status status="PASS" starttime="20220206 23:05:01.757" endtime="20220206 23:05:01.757"/>
 </kw>
-<status status="PASS" starttime="20220206 01:27:40.928" endtime="20220206 01:27:40.933"/>
+<status status="PASS" starttime="20220206 23:05:01.757" endtime="20220206 23:05:01.757"/>
 </kw>
 <kw name="Criar header para a chamadas" library="resourseProjectoABC">
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${HEADER}</var>
 <arg>Content-Type=${CONTENT_TYPE}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220206 01:27:40.934" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
-<status status="PASS" starttime="20220206 01:27:40.933" endtime="20220206 01:27:40.934"/>
+<msg timestamp="20220206 23:05:01.757" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:05:01.757" endtime="20220206 23:05:01.757"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${HEADER}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20220206 01:27:40.935" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
-<status status="PASS" starttime="20220206 01:27:40.934" endtime="20220206 01:27:40.935"/>
+<msg timestamp="20220206 23:05:01.757" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:05:01.757" endtime="20220206 23:05:01.757"/>
 </kw>
-<status status="PASS" starttime="20220206 01:27:40.933" endtime="20220206 01:27:40.935"/>
+<status status="PASS" starttime="20220206 23:05:01.757" endtime="20220206 23:05:01.757"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${BODY}</var>
-<arg>nome=${USUARIO.Nome} job=${USUARIO.Job}</arg>
+<arg>nome=${USUARIO.Nome}</arg>
+<arg>job=${USUARIO.Job}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220206 01:27:40.936" level="INFO">${BODY} = {'nome': 'Dr. Enzo Nascimento job=Médico cirurgião'}</msg>
-<status status="PASS" starttime="20220206 01:27:40.935" endtime="20220206 01:27:40.936"/>
+<msg timestamp="20220206 23:05:01.757" level="INFO">${BODY} = {'nome': 'Vitor Hugo da Mata', 'job': 'Chaveiro'}</msg>
+<status status="PASS" starttime="20220206 23:05:01.757" endtime="20220206 23:05:01.757"/>
 </kw>
 <kw name="POST On Session" library="RequestsLibrary">
 <var>${RESPOSTA}</var>
@@ -71,34 +72,54 @@
 <arg>json=${BODY}</arg>
 <arg>headers=${HEADER}</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<msg timestamp="20220206 01:28:23.591" level="INFO">POST Request : url=https://reqres.in/api/users 
+<msg timestamp="20220206 23:05:44.464" level="INFO">POST Request : url=https://reqres.in/api/users 
  path_url=/api/users 
- headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '62'} 
- body=b'{"nome": "Dr. Enzo Nascimento job=M\\u00e9dico cirurgi\\u00e3o"}' 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '49'} 
+ body=b'{"nome": "Vitor Hugo da Mata", "job": "Chaveiro"}' 
  </msg>
-<msg timestamp="20220206 01:28:23.591" level="INFO">POST Response : url=https://reqres.in/api/users 
+<msg timestamp="20220206 23:05:44.464" level="INFO">POST Response : url=https://reqres.in/api/users 
  status=201, reason=Created 
- headers={'Date': 'Sun, 06 Feb 2022 04:28:49 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '103', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"67-xkOUjC/NCjxcsOy7xCxbXIm6cQE"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=89obNORQAhdB%2FQa2%2BfKil69AZxvHoYkKb4%2FQiE1texo11nWN3UA9ft6DYv4tQuV3tesZcCCRn%2FYux26rTegh69LXWZBLeo9pRER9Xi0ajZbSfsuiWQbmZFbsII8%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6d91a2462a864b3b-GRU', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
- body={"nome":"Dr. Enzo Nascimento job=Médico cirurgião","id":"190","createdAt":"2022-02-06T04:28:49.330Z"} 
+ headers={'Date': 'Mon, 07 Feb 2022 02:06:10 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '96', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"60-SHlI+UAsMIQyJd1bab5x0tkLbtE"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2BhtIRdrVdsdzjfC%2BVjdhhJaww5PtKH9AqYe0YdWQPRZJX5%2F0yIU%2FYbQH%2Bc6HRWcIUi13NiR7B0E%2BNSz98M0Tkp6dAugqDB%2Bn1vJFywJ514LIUFcMzxme%2BCg5biU%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6d990eb31f18eece-GRU', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body={"nome":"Vitor Hugo da Mata","job":"Chaveiro","id":"761","createdAt":"2022-02-07T02:06:10.755Z"} 
  </msg>
-<msg timestamp="20220206 01:28:23.591" level="INFO">C:\Users\LFSpanhol\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg timestamp="20220206 23:05:44.464" level="INFO">C:\Users\LFSpanhol\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20220206 01:28:23.591" level="INFO">${RESPOSTA} = &lt;Response [201]&gt;</msg>
-<status status="PASS" starttime="20220206 01:27:40.937" endtime="20220206 01:28:23.591"/>
+<msg timestamp="20220206 23:05:44.464" level="INFO">${RESPOSTA} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20220206 23:05:01.757" endtime="20220206 23:05:44.464"/>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<var>${ID_USUARIO}</var>
+<arg>${RESPOSTA.json()}</arg>
+<arg>id</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<msg timestamp="20220206 23:05:44.464" level="INFO">${ID_USUARIO} = 761</msg>
+<status status="PASS" starttime="20220206 23:05:44.464" endtime="20220206 23:05:44.464"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${ID_USUARIO}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220206 23:05:44.464" level="INFO">761</msg>
+<status status="PASS" starttime="20220206 23:05:44.464" endtime="20220206 23:05:44.464"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${RESPOSTA}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220206 01:28:23.595" level="INFO">&lt;Response [201]&gt;</msg>
-<status status="PASS" starttime="20220206 01:28:23.591" endtime="20220206 01:28:23.595"/>
+<msg timestamp="20220206 23:05:44.464" level="INFO">&lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20220206 23:05:44.464" endtime="20220206 23:05:44.464"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${RESPOSTA}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20220206 01:28:23.596" level="INFO">${RESPOSTA} = &lt;Response [201]&gt;</msg>
-<status status="PASS" starttime="20220206 01:28:23.595" endtime="20220206 01:28:23.596"/>
+<msg timestamp="20220206 23:05:44.464" level="INFO">${RESPOSTA} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20220206 23:05:44.464" endtime="20220206 23:05:44.464"/>
 </kw>
-<status status="PASS" starttime="20220206 01:27:40.928" endtime="20220206 01:28:23.596"/>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${ID_USUARIO}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:05:44.472" level="INFO">${ID_USUARIO} = 761</msg>
+<status status="PASS" starttime="20220206 23:05:44.472" endtime="20220206 23:05:44.472"/>
+</kw>
+<status status="PASS" starttime="20220206 23:05:01.757" endtime="20220206 23:05:44.472"/>
 </kw>
 <kw name="Teste: Validar o usuário cadastrado via API" library="resourseProjectoABC">
 <kw name="Cadastrar um usuário no sistema" library="resourseProjectoABC">
@@ -106,52 +127,53 @@
 <kw name="Name" library="FakerLibrary">
 <var>${RANDOM_NOME}</var>
 <doc>:example 'John Doe'</doc>
-<msg timestamp="20220206 01:28:23.599" level="INFO">${RANDOM_NOME} = Francisco Barbosa</msg>
-<status status="PASS" starttime="20220206 01:28:23.599" endtime="20220206 01:28:23.599"/>
+<msg timestamp="20220206 23:05:44.472" level="INFO">${RANDOM_NOME} = Otávio Sales</msg>
+<status status="PASS" starttime="20220206 23:05:44.472" endtime="20220206 23:05:44.472"/>
 </kw>
 <kw name="Job" library="FakerLibrary">
 <var>${RANDOM_JOB}</var>
-<msg timestamp="20220206 01:28:23.600" level="INFO">${RANDOM_JOB} = Xilógrafo</msg>
-<status status="PASS" starttime="20220206 01:28:23.599" endtime="20220206 01:28:23.600"/>
+<msg timestamp="20220206 23:05:44.472" level="INFO">${RANDOM_JOB} = Alergologista</msg>
+<status status="PASS" starttime="20220206 23:05:44.472" endtime="20220206 23:05:44.472"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${USUARIO}</var>
 <arg>Nome=${RANDOM_NOME}</arg>
 <arg>Job=${RANDOM_JOB}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220206 01:28:23.600" level="INFO">${USUARIO} = {'Nome': 'Francisco Barbosa', 'Job': 'Xilógrafo'}</msg>
-<status status="PASS" starttime="20220206 01:28:23.600" endtime="20220206 01:28:23.600"/>
+<msg timestamp="20220206 23:05:44.472" level="INFO">${USUARIO} = {'Nome': 'Otávio Sales', 'Job': 'Alergologista'}</msg>
+<status status="PASS" starttime="20220206 23:05:44.472" endtime="20220206 23:05:44.472"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${USUARIO}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20220206 01:28:23.600" level="INFO">${USUARIO} = {'Nome': 'Francisco Barbosa', 'Job': 'Xilógrafo'}</msg>
-<status status="PASS" starttime="20220206 01:28:23.600" endtime="20220206 01:28:23.600"/>
+<msg timestamp="20220206 23:05:44.472" level="INFO">${USUARIO} = {'Nome': 'Otávio Sales', 'Job': 'Alergologista'}</msg>
+<status status="PASS" starttime="20220206 23:05:44.472" endtime="20220206 23:05:44.472"/>
 </kw>
-<status status="PASS" starttime="20220206 01:28:23.599" endtime="20220206 01:28:23.600"/>
+<status status="PASS" starttime="20220206 23:05:44.472" endtime="20220206 23:05:44.480"/>
 </kw>
 <kw name="Criar header para a chamadas" library="resourseProjectoABC">
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${HEADER}</var>
 <arg>Content-Type=${CONTENT_TYPE}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220206 01:28:23.600" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
-<status status="PASS" starttime="20220206 01:28:23.600" endtime="20220206 01:28:23.600"/>
+<msg timestamp="20220206 23:05:44.480" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:05:44.480" endtime="20220206 23:05:44.480"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${HEADER}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20220206 01:28:23.600" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
-<status status="PASS" starttime="20220206 01:28:23.600" endtime="20220206 01:28:23.600"/>
+<msg timestamp="20220206 23:05:44.480" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:05:44.480" endtime="20220206 23:05:44.480"/>
 </kw>
-<status status="PASS" starttime="20220206 01:28:23.600" endtime="20220206 01:28:23.600"/>
+<status status="PASS" starttime="20220206 23:05:44.480" endtime="20220206 23:05:44.480"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${BODY}</var>
-<arg>nome=${USUARIO.Nome} job=${USUARIO.Job}</arg>
+<arg>nome=${USUARIO.Nome}</arg>
+<arg>job=${USUARIO.Job}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220206 01:28:23.600" level="INFO">${BODY} = {'nome': 'Francisco Barbosa job=Xilógrafo'}</msg>
-<status status="PASS" starttime="20220206 01:28:23.600" endtime="20220206 01:28:23.600"/>
+<msg timestamp="20220206 23:05:44.480" level="INFO">${BODY} = {'nome': 'Otávio Sales', 'job': 'Alergologista'}</msg>
+<status status="PASS" starttime="20220206 23:05:44.480" endtime="20220206 23:05:44.480"/>
 </kw>
 <kw name="POST On Session" library="RequestsLibrary">
 <var>${RESPOSTA}</var>
@@ -160,66 +182,86 @@
 <arg>json=${BODY}</arg>
 <arg>headers=${HEADER}</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<msg timestamp="20220206 01:28:24.065" level="INFO">POST Request : url=https://reqres.in/api/users 
+<msg timestamp="20220206 23:05:44.970" level="INFO">POST Request : url=https://reqres.in/api/users 
  path_url=/api/users 
- headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '48'} 
- body=b'{"nome": "Francisco Barbosa job=Xil\\u00f3grafo"}' 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '53'} 
+ body=b'{"nome": "Ot\\u00e1vio Sales", "job": "Alergologista"}' 
  </msg>
-<msg timestamp="20220206 01:28:24.065" level="INFO">POST Response : url=https://reqres.in/api/users 
+<msg timestamp="20220206 23:05:44.970" level="INFO">POST Response : url=https://reqres.in/api/users 
  status=201, reason=Created 
- headers={'Date': 'Sun, 06 Feb 2022 04:28:49 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '93', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"5d-x3HRVFQuV9kVwvixugdIN5u0y5Q"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=8zggeF0n3vX1DILAiUzJDQho5r3vLV8jeCG%2FC1WoVRlv9HG7yDsVAzTnCRaKPdu5PgDP4E%2FpL5tjGO%2Bf%2FEo13UtCxXNvbN3VFjPVCtwk1PYCcLFXWZorH575%2Bag%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6d91a2494cf64b3b-GRU', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
- body={"nome":"Francisco Barbosa job=Xilógrafo","id":"979","createdAt":"2022-02-06T04:28:49.814Z"} 
+ headers={'Date': 'Mon, 07 Feb 2022 02:06:11 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '96', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"60-oUKb1wCVsPkgra5ECOJzqP24ZXQ"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=2SIff%2Fuk9IkfaL0let6TDTjXyqVyiLyeec6lnTn9NPsyo%2BIf6Uhvh8WlOC3s7Kv8Rnemjdip9T%2B%2Fe%2Bdss5inNNHKm67doYoLyDNR6JVWWWKKGkesfl1%2BoxyVee0%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6d990eb6aaf3eece-GRU', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body={"nome":"Otávio Sales","job":"Alergologista","id":"390","createdAt":"2022-02-07T02:06:11.308Z"} 
  </msg>
-<msg timestamp="20220206 01:28:24.065" level="INFO">C:\Users\LFSpanhol\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg timestamp="20220206 23:05:44.970" level="INFO">C:\Users\LFSpanhol\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20220206 01:28:24.065" level="INFO">${RESPOSTA} = &lt;Response [201]&gt;</msg>
-<status status="PASS" starttime="20220206 01:28:23.600" endtime="20220206 01:28:24.065"/>
+<msg timestamp="20220206 23:05:44.978" level="INFO">${RESPOSTA} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20220206 23:05:44.480" endtime="20220206 23:05:44.978"/>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<var>${ID_USUARIO}</var>
+<arg>${RESPOSTA.json()}</arg>
+<arg>id</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<msg timestamp="20220206 23:05:44.978" level="INFO">${ID_USUARIO} = 390</msg>
+<status status="PASS" starttime="20220206 23:05:44.978" endtime="20220206 23:05:44.978"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${ID_USUARIO}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220206 23:05:44.978" level="INFO">390</msg>
+<status status="PASS" starttime="20220206 23:05:44.978" endtime="20220206 23:05:44.978"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${RESPOSTA}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220206 01:28:24.078" level="INFO">&lt;Response [201]&gt;</msg>
-<status status="PASS" starttime="20220206 01:28:24.078" endtime="20220206 01:28:24.079"/>
+<msg timestamp="20220206 23:05:44.978" level="INFO">&lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20220206 23:05:44.978" endtime="20220206 23:05:44.978"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${RESPOSTA}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20220206 01:28:24.080" level="INFO">${RESPOSTA} = &lt;Response [201]&gt;</msg>
-<status status="PASS" starttime="20220206 01:28:24.079" endtime="20220206 01:28:24.080"/>
+<msg timestamp="20220206 23:05:44.978" level="INFO">${RESPOSTA} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20220206 23:05:44.978" endtime="20220206 23:05:44.978"/>
 </kw>
-<status status="PASS" starttime="20220206 01:28:23.598" endtime="20220206 01:28:24.081"/>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${ID_USUARIO}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:05:44.978" level="INFO">${ID_USUARIO} = 390</msg>
+<status status="PASS" starttime="20220206 23:05:44.978" endtime="20220206 23:05:44.978"/>
+</kw>
+<status status="PASS" starttime="20220206 23:05:44.472" endtime="20220206 23:05:44.978"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${RES_BODY}</var>
 <arg>${RESPOSTA.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20220206 01:28:24.083" level="INFO">${RES_BODY} = {"nome":"Francisco Barbosa job=Xil\xc3\xb3grafo","id":"979","createdAt":"2022-02-06T04:28:49.814Z"}</msg>
-<status status="PASS" starttime="20220206 01:28:24.081" endtime="20220206 01:28:24.083"/>
+<msg timestamp="20220206 23:05:44.986" level="INFO">${RES_BODY} = {"nome":"Ot\xc3\xa1vio Sales","job":"Alergologista","id":"390","createdAt":"2022-02-07T02:06:11.308Z"}</msg>
+<status status="PASS" starttime="20220206 23:05:44.978" endtime="20220206 23:05:44.986"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${RESPOSTA.url}</arg>
 <arg>${URL_API}${POST_CADASTRO}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20220206 01:28:24.083" endtime="20220206 01:28:24.084"/>
+<status status="PASS" starttime="20220206 23:05:44.986" endtime="20220206 23:05:44.986"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${RESPOSTA.reason}</arg>
 <arg>${MSG_REASON.Create}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20220206 01:28:24.084" endtime="20220206 01:28:24.085"/>
+<status status="PASS" starttime="20220206 23:05:44.986" endtime="20220206 23:05:44.986"/>
 </kw>
 <kw name="Should Be Equal As Integers" library="BuiltIn">
 <arg>${RESPOSTA.status_code}</arg>
 <arg>201</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<msg timestamp="20220206 01:28:24.086" level="INFO">Argument types are:
+<msg timestamp="20220206 23:05:44.994" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20220206 01:28:24.085" endtime="20220206 01:28:24.086"/>
+<status status="PASS" starttime="20220206 23:05:44.986" endtime="20220206 23:05:44.994"/>
 </kw>
-<status status="PASS" starttime="20220206 01:28:23.597" endtime="20220206 01:28:24.086"/>
+<status status="PASS" starttime="20220206 23:05:44.472" endtime="20220206 23:05:44.994"/>
 </kw>
-<status status="PASS" starttime="20220206 01:27:40.916" endtime="20220206 01:28:24.087"/>
+<status status="PASS" starttime="20220206 23:05:01.752" endtime="20220206 23:05:44.994"/>
 </test>
 <test id="s1-t2" name="TC02: Consulta token do usuário">
 <kw name="Conectar a API" library="resourseProjectoABC" type="SETUP">
@@ -227,10 +269,10 @@
 <arg>TesteApi</arg>
 <arg>${URL_API}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20220206 01:28:24.091" level="INFO">Creating Session using : alias=TesteApi, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20220206 01:28:24.091" endtime="20220206 01:28:24.091"/>
+<msg timestamp="20220206 23:05:44.994" level="INFO">Creating Session using : alias=TesteApi, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20220206 23:05:44.994" endtime="20220206 23:05:44.994"/>
 </kw>
-<status status="PASS" starttime="20220206 01:28:24.090" endtime="20220206 01:28:24.091"/>
+<status status="PASS" starttime="20220206 23:05:44.994" endtime="20220206 23:05:44.994"/>
 </kw>
 <kw name="Consultar o token do um usuário cadastrado no sistema" library="resourseProjectoABC">
 <kw name="Criar header para a chamadas" library="resourseProjectoABC">
@@ -238,24 +280,24 @@
 <var>${HEADER}</var>
 <arg>Content-Type=${CONTENT_TYPE}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220206 01:28:24.092" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
-<status status="PASS" starttime="20220206 01:28:24.092" endtime="20220206 01:28:24.092"/>
+<msg timestamp="20220206 23:05:44.994" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:05:44.994" endtime="20220206 23:05:44.994"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${HEADER}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20220206 01:28:24.093" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
-<status status="PASS" starttime="20220206 01:28:24.092" endtime="20220206 01:28:24.093"/>
+<msg timestamp="20220206 23:05:44.994" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:05:44.994" endtime="20220206 23:05:44.994"/>
 </kw>
-<status status="PASS" starttime="20220206 01:28:24.092" endtime="20220206 01:28:24.093"/>
+<status status="PASS" starttime="20220206 23:05:44.994" endtime="20220206 23:05:44.994"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${BODY}</var>
 <arg>email=eve.holt@reqres.in</arg>
 <arg>password=cityslicka</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220206 01:28:24.093" level="INFO">${BODY} = {'email': 'eve.holt@reqres.in', 'password': 'cityslicka'}</msg>
-<status status="PASS" starttime="20220206 01:28:24.093" endtime="20220206 01:28:24.093"/>
+<msg timestamp="20220206 23:05:44.994" level="INFO">${BODY} = {'email': 'eve.holt@reqres.in', 'password': 'cityslicka'}</msg>
+<status status="PASS" starttime="20220206 23:05:44.994" endtime="20220206 23:05:44.994"/>
 </kw>
 <kw name="POST On Session" library="RequestsLibrary">
 <var>${RESPOSTA}</var>
@@ -264,34 +306,34 @@
 <arg>json=${BODY}</arg>
 <arg>headers=${HEADER}</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<msg timestamp="20220206 01:29:06.675" level="INFO">POST Request : url=https://reqres.in/api/login 
+<msg timestamp="20220206 23:06:27.675" level="INFO">POST Request : url=https://reqres.in/api/login 
  path_url=/api/login 
  headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '57'} 
  body=b'{"email": "eve.holt@reqres.in", "password": "cityslicka"}' 
  </msg>
-<msg timestamp="20220206 01:29:06.691" level="INFO">POST Response : url=https://reqres.in/api/login 
+<msg timestamp="20220206 23:06:27.675" level="INFO">POST Response : url=https://reqres.in/api/login 
  status=200, reason=OK 
- headers={'Date': 'Sun, 06 Feb 2022 04:29:32 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '29', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"1d-lGCrvD6B7Qzk11+2C98+nGhhuec"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=TfNVRe9vsDnrnO2PVAjo6%2FDwH5fnwwNbCa7w3jbb8b%2F40sPkeDE0bpY0M0o%2BAk0QsNQWpjvg9pOzxgFnUMR2G2xpbhgrSgdF0FRhjLW7NsNma8xjIT5pWVcYhr4%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6d91a353a92df758-GRU', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ headers={'Date': 'Mon, 07 Feb 2022 02:06:54 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '29', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"1d-lGCrvD6B7Qzk11+2C98+nGhhuec"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=vfqTMwwcflJWcunEGgTTbUY8XfetFctS3suprmm%2FpszlUAhoeKWHHKuNXSguMeyp0aIDKuPfhCInUB75wJ666%2B40xm7OqCt9Y8wkz8y2w0rLs9HrAS1P9kF6bnQ%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6d990fc1887f4d15-GRU', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
  body={"token":"QpwL5tke4Pnpja7X4"} 
  </msg>
-<msg timestamp="20220206 01:29:06.691" level="INFO">C:\Users\LFSpanhol\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg timestamp="20220206 23:06:27.675" level="INFO">C:\Users\LFSpanhol\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20220206 01:29:06.691" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220206 01:28:24.093" endtime="20220206 01:29:06.691"/>
+<msg timestamp="20220206 23:06:27.680" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220206 23:05:44.994" endtime="20220206 23:06:27.680"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${RESPOSTA}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220206 01:29:06.695" level="INFO">&lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220206 01:29:06.695" endtime="20220206 01:29:06.695"/>
+<msg timestamp="20220206 23:06:27.681" level="INFO">&lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220206 23:06:27.681" endtime="20220206 23:06:27.681"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${RESPOSTA}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20220206 01:29:06.696" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220206 01:29:06.696" endtime="20220206 01:29:06.696"/>
+<msg timestamp="20220206 23:06:27.681" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220206 23:06:27.681" endtime="20220206 23:06:27.681"/>
 </kw>
-<status status="PASS" starttime="20220206 01:28:24.092" endtime="20220206 01:29:06.697"/>
+<status status="PASS" starttime="20220206 23:05:44.994" endtime="20220206 23:06:27.681"/>
 </kw>
 <kw name="Teste: validar o retorno do token" library="resourseProjectoABC">
 <kw name="Consultar o token do um usuário cadastrado no sistema" library="resourseProjectoABC">
@@ -300,24 +342,24 @@
 <var>${HEADER}</var>
 <arg>Content-Type=${CONTENT_TYPE}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220206 01:29:06.697" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
-<status status="PASS" starttime="20220206 01:29:06.697" endtime="20220206 01:29:06.697"/>
+<msg timestamp="20220206 23:06:27.681" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:06:27.681" endtime="20220206 23:06:27.681"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${HEADER}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20220206 01:29:06.697" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
-<status status="PASS" starttime="20220206 01:29:06.697" endtime="20220206 01:29:06.697"/>
+<msg timestamp="20220206 23:06:27.681" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:06:27.681" endtime="20220206 23:06:27.681"/>
 </kw>
-<status status="PASS" starttime="20220206 01:29:06.697" endtime="20220206 01:29:06.697"/>
+<status status="PASS" starttime="20220206 23:06:27.681" endtime="20220206 23:06:27.681"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${BODY}</var>
 <arg>email=eve.holt@reqres.in</arg>
 <arg>password=cityslicka</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220206 01:29:06.697" level="INFO">${BODY} = {'email': 'eve.holt@reqres.in', 'password': 'cityslicka'}</msg>
-<status status="PASS" starttime="20220206 01:29:06.697" endtime="20220206 01:29:06.697"/>
+<msg timestamp="20220206 23:06:27.681" level="INFO">${BODY} = {'email': 'eve.holt@reqres.in', 'password': 'cityslicka'}</msg>
+<status status="PASS" starttime="20220206 23:06:27.681" endtime="20220206 23:06:27.681"/>
 </kw>
 <kw name="POST On Session" library="RequestsLibrary">
 <var>${RESPOSTA}</var>
@@ -326,72 +368,72 @@
 <arg>json=${BODY}</arg>
 <arg>headers=${HEADER}</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<msg timestamp="20220206 01:29:07.164" level="INFO">POST Request : url=https://reqres.in/api/login 
+<msg timestamp="20220206 23:06:28.189" level="INFO">POST Request : url=https://reqres.in/api/login 
  path_url=/api/login 
  headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '57'} 
  body=b'{"email": "eve.holt@reqres.in", "password": "cityslicka"}' 
  </msg>
-<msg timestamp="20220206 01:29:07.164" level="INFO">POST Response : url=https://reqres.in/api/login 
+<msg timestamp="20220206 23:06:28.189" level="INFO">POST Response : url=https://reqres.in/api/login 
  status=200, reason=OK 
- headers={'Date': 'Sun, 06 Feb 2022 04:29:33 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '29', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"1d-lGCrvD6B7Qzk11+2C98+nGhhuec"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=48maG0k4DR3tRiLQuHjfTNsu46M7oShP%2FhNRVBxE5ZUFBB7hd6VdQlyMEZSXr68WtctKoTHM7%2BFXX7J5%2Booeys%2B08eYep6UQcLd3Z1FZt5ohTBIwsxx62cj8gq4%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6d91a356ab49f758-GRU', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ headers={'Date': 'Mon, 07 Feb 2022 02:06:54 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '29', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"1d-lGCrvD6B7Qzk11+2C98+nGhhuec"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=zp6Pk6hLwSDznIW8cmw4prRseeuD7nSgxZ5cerhg6TkMUAYI1ys1ZaRr0qWNaEeiuBnRH0KmtC9A2EN00Ukfid2Xc4wASrArE0U8vj0Xcviw8EBI263Ls4UddNE%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6d990fc4acd74d15-GRU', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
  body={"token":"QpwL5tke4Pnpja7X4"} 
  </msg>
-<msg timestamp="20220206 01:29:07.164" level="INFO">C:\Users\LFSpanhol\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg timestamp="20220206 23:06:28.189" level="INFO">C:\Users\LFSpanhol\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20220206 01:29:07.164" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220206 01:29:06.697" endtime="20220206 01:29:07.164"/>
+<msg timestamp="20220206 23:06:28.192" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220206 23:06:27.681" endtime="20220206 23:06:28.192"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${RESPOSTA}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220206 01:29:07.176" level="INFO">&lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220206 01:29:07.164" endtime="20220206 01:29:07.177"/>
+<msg timestamp="20220206 23:06:28.192" level="INFO">&lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220206 23:06:28.192" endtime="20220206 23:06:28.192"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${RESPOSTA}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20220206 01:29:07.178" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220206 01:29:07.177" endtime="20220206 01:29:07.178"/>
+<msg timestamp="20220206 23:06:28.192" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220206 23:06:28.192" endtime="20220206 23:06:28.192"/>
 </kw>
-<status status="PASS" starttime="20220206 01:29:06.697" endtime="20220206 01:29:07.180"/>
+<status status="PASS" starttime="20220206 23:06:27.681" endtime="20220206 23:06:28.192"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${RES_BODY}</var>
 <arg>${RESPOSTA.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20220206 01:29:07.180" level="INFO">${RES_BODY} = {"token":"QpwL5tke4Pnpja7X4"}</msg>
-<status status="PASS" starttime="20220206 01:29:07.180" endtime="20220206 01:29:07.180"/>
+<msg timestamp="20220206 23:06:28.192" level="INFO">${RES_BODY} = {"token":"QpwL5tke4Pnpja7X4"}</msg>
+<status status="PASS" starttime="20220206 23:06:28.192" endtime="20220206 23:06:28.192"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${RESPOSTA.url}</arg>
 <arg>${URL_API}${POST_CONSULTA}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20220206 01:29:07.180" endtime="20220206 01:29:07.180"/>
+<status status="PASS" starttime="20220206 23:06:28.192" endtime="20220206 23:06:28.200"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${RESPOSTA.reason}</arg>
 <arg>${MSG_REASON.Ok}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20220206 01:29:07.180" endtime="20220206 01:29:07.180"/>
+<status status="PASS" starttime="20220206 23:06:28.200" endtime="20220206 23:06:28.200"/>
 </kw>
 <kw name="Should Be Equal As Integers" library="BuiltIn">
 <arg>${RESPOSTA.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<msg timestamp="20220206 01:29:07.180" level="INFO">Argument types are:
+<msg timestamp="20220206 23:06:28.200" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20220206 01:29:07.180" endtime="20220206 01:29:07.180"/>
+<status status="PASS" starttime="20220206 23:06:28.200" endtime="20220206 23:06:28.200"/>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <arg>${RES_BODY}</arg>
 <arg>${MSG_RETORNO.token}</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20220206 01:29:07.180" endtime="20220206 01:29:07.180"/>
+<status status="PASS" starttime="20220206 23:06:28.200" endtime="20220206 23:06:28.200"/>
 </kw>
-<status status="PASS" starttime="20220206 01:29:06.697" endtime="20220206 01:29:07.180"/>
+<status status="PASS" starttime="20220206 23:06:27.681" endtime="20220206 23:06:28.200"/>
 </kw>
-<status status="PASS" starttime="20220206 01:28:24.089" endtime="20220206 01:29:07.180"/>
+<status status="PASS" starttime="20220206 23:05:44.994" endtime="20220206 23:06:28.200"/>
 </test>
 <test id="s1-t3" name="TC03: Consulta de usuário cadastro no sistema">
 <kw name="Conectar a API" library="resourseProjectoABC" type="SETUP">
@@ -399,206 +441,940 @@
 <arg>TesteApi</arg>
 <arg>${URL_API}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20220206 01:29:07.187" level="INFO">Creating Session using : alias=TesteApi, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20220206 01:29:07.187" endtime="20220206 01:29:07.187"/>
+<msg timestamp="20220206 23:06:28.208" level="INFO">Creating Session using : alias=TesteApi, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20220206 23:06:28.208" endtime="20220206 23:06:28.208"/>
 </kw>
-<status status="PASS" starttime="20220206 01:29:07.180" endtime="20220206 01:29:07.187"/>
+<status status="PASS" starttime="20220206 23:06:28.208" endtime="20220206 23:06:28.208"/>
 </kw>
-<kw name="Consultar um usuário cadastrado no sistema pelo id" library="resourseProjectoABC">
+<kw name="Consultar um usuário cadastrado no sistema pelo id &quot;2&quot;" library="resourseProjectoABC" sourcename="Consultar um usuário cadastrado no sistema pelo id &quot;${ID}&quot;">
 <kw name="Criar header para a chamadas" library="resourseProjectoABC">
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${HEADER}</var>
 <arg>Content-Type=${CONTENT_TYPE}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220206 01:29:07.189" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
-<status status="PASS" starttime="20220206 01:29:07.189" endtime="20220206 01:29:07.189"/>
+<msg timestamp="20220206 23:06:28.216" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:06:28.208" endtime="20220206 23:06:28.216"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${HEADER}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20220206 01:29:07.189" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
-<status status="PASS" starttime="20220206 01:29:07.189" endtime="20220206 01:29:07.189"/>
+<msg timestamp="20220206 23:06:28.216" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:06:28.216" endtime="20220206 23:06:28.216"/>
 </kw>
-<status status="PASS" starttime="20220206 01:29:07.189" endtime="20220206 01:29:07.189"/>
+<status status="PASS" starttime="20220206 23:06:28.208" endtime="20220206 23:06:28.216"/>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <var>${RESPOSTA}</var>
 <arg>TesteAPI</arg>
-<arg>${GET_CONSULTA}</arg>
+<arg>${GET_CONSULTA}${ID}</arg>
 <arg>headers=${HEADER}</arg>
 <doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
-<msg timestamp="20220206 01:29:07.189" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg timestamp="20220206 01:29:49.358" level="INFO">GET Request : url=https://reqres.in/api/users/2 
+<msg timestamp="20220206 23:06:28.216" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20220206 23:07:10.424" level="INFO">GET Request : url=https://reqres.in/api/users/2 
  path_url=/api/users/2 
  headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json'} 
  body=None 
  </msg>
-<msg timestamp="20220206 01:29:49.358" level="INFO">GET Response : url=https://reqres.in/api/users/2 
+<msg timestamp="20220206 23:07:10.424" level="INFO">GET Response : url=https://reqres.in/api/users/2 
  status=200, reason=OK 
- headers={'Date': 'Sun, 06 Feb 2022 04:30:15 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"', 'via': '1.1 vegur', 'Cache-Control': 'max-age=14400', 'CF-Cache-Status': 'HIT', 'Age': '2722', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=q6RqO2rtwr8sVx6BECRFDAmb7B8GZPeVfupCtyk9LhxSPxDEa339ER7syRTkEJ1Hr%2BElabiSJl6NIdo8omWpmLcaAEK%2F39Ifv2LkCorO4S5anyp4mHzup3WcPO8%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '6d91a4612ec5f3ab-GRU', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ headers={'Date': 'Mon, 07 Feb 2022 02:07:36 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"', 'via': '1.1 vegur', 'Cache-Control': 'max-age=14400', 'CF-Cache-Status': 'HIT', 'Age': '6153', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=yalq9B%2FBrsEzqhMZ%2BOAwSvughRyXpfYc%2FWOsi4iYt4Pfpd33PF4EZPNPZ8P4pYCwmMmpbOmALA%2BRttKwTHveRrPIJRn15STe3aQU5HiNtduv8N6PF9TeRf47%2F9Y%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '6d9910cf7bd06b0f-GRU', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
  body={"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}} 
  </msg>
-<msg timestamp="20220206 01:29:49.358" level="INFO">C:\Users\LFSpanhol\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg timestamp="20220206 23:07:10.424" level="INFO">C:\Users\LFSpanhol\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20220206 01:29:49.358" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220206 01:29:07.189" endtime="20220206 01:29:49.358"/>
+<msg timestamp="20220206 23:07:10.424" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220206 23:06:28.216" endtime="20220206 23:07:10.424"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${RESPOSTA}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220206 01:29:49.370" level="INFO">&lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220206 01:29:49.370" endtime="20220206 01:29:49.371"/>
+<msg timestamp="20220206 23:07:10.424" level="INFO">&lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220206 23:07:10.424" endtime="20220206 23:07:10.424"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${RESPOSTA}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20220206 01:29:49.372" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220206 01:29:49.371" endtime="20220206 01:29:49.373"/>
+<msg timestamp="20220206 23:07:10.424" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220206 23:07:10.424" endtime="20220206 23:07:10.424"/>
 </kw>
-<status status="PASS" starttime="20220206 01:29:07.188" endtime="20220206 01:29:49.373"/>
+<status status="PASS" starttime="20220206 23:06:28.208" endtime="20220206 23:07:10.424"/>
 </kw>
 <kw name="Teste: validar as informações do usuário cadastrado" library="resourseProjectoABC">
-<kw name="Consultar um usuário cadastrado no sistema pelo id" library="resourseProjectoABC">
+<kw name="Consultar um usuário cadastrado no sistema pelo id &quot;2&quot;" library="resourseProjectoABC" sourcename="Consultar um usuário cadastrado no sistema pelo id &quot;${ID}&quot;">
 <kw name="Criar header para a chamadas" library="resourseProjectoABC">
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${HEADER}</var>
 <arg>Content-Type=${CONTENT_TYPE}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220206 01:29:49.376" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
-<status status="PASS" starttime="20220206 01:29:49.375" endtime="20220206 01:29:49.376"/>
+<msg timestamp="20220206 23:07:10.432" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:07:10.432" endtime="20220206 23:07:10.432"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${HEADER}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20220206 01:29:49.376" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
-<status status="PASS" starttime="20220206 01:29:49.376" endtime="20220206 01:29:49.376"/>
+<msg timestamp="20220206 23:07:10.432" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:07:10.432" endtime="20220206 23:07:10.432"/>
 </kw>
-<status status="PASS" starttime="20220206 01:29:49.375" endtime="20220206 01:29:49.377"/>
+<status status="PASS" starttime="20220206 23:07:10.432" endtime="20220206 23:07:10.432"/>
 </kw>
 <kw name="Get Request" library="RequestsLibrary">
 <var>${RESPOSTA}</var>
 <arg>TesteAPI</arg>
-<arg>${GET_CONSULTA}</arg>
+<arg>${GET_CONSULTA}${ID}</arg>
 <arg>headers=${HEADER}</arg>
 <doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
-<msg timestamp="20220206 01:29:49.377" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg timestamp="20220206 01:29:49.408" level="INFO">GET Request : url=https://reqres.in/api/users/2 
+<msg timestamp="20220206 23:07:10.432" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20220206 23:07:10.465" level="INFO">GET Request : url=https://reqres.in/api/users/2 
  path_url=/api/users/2 
  headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json'} 
  body=None 
  </msg>
-<msg timestamp="20220206 01:29:49.408" level="INFO">GET Response : url=https://reqres.in/api/users/2 
+<msg timestamp="20220206 23:07:10.465" level="INFO">GET Response : url=https://reqres.in/api/users/2 
  status=200, reason=OK 
- headers={'Date': 'Sun, 06 Feb 2022 04:30:15 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"', 'via': '1.1 vegur', 'Cache-Control': 'max-age=14400', 'CF-Cache-Status': 'HIT', 'Age': '2722', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=NTWZYHjCot5HzCy04qwzBDcHrR2PnqWhpwaeHwnTf%2BmUFEdDLcFcFWhIfyoXZ7QR8lVicRvWWkbEtUfN2wQux7hrNX3hSgJzrXQxN4SAhvnE2xG2BvFq7MtHInU%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '6d91a4616eeaf3ab-GRU', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ headers={'Date': 'Mon, 07 Feb 2022 02:07:36 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"', 'via': '1.1 vegur', 'Cache-Control': 'max-age=14400', 'CF-Cache-Status': 'HIT', 'Age': '6153', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=xIIHZ5Uvi%2BBuhUVMtxX%2FypgfftXgGm3GJT0sCYIec5Q4akmMi%2B8MKhDnquS9UYh7VbHLcTVQ85Ha0VhpS6JZtRJUP9Axn6miOXYoyr0G6TIb%2B6GQcDRQCqegeqQ%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '6d9910cfdc436b0f-GRU', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
  body={"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}} 
  </msg>
-<msg timestamp="20220206 01:29:49.408" level="INFO">C:\Users\LFSpanhol\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg timestamp="20220206 23:07:10.465" level="INFO">C:\Users\LFSpanhol\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20220206 01:29:49.409" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220206 01:29:49.377" endtime="20220206 01:29:49.410"/>
+<msg timestamp="20220206 23:07:10.465" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220206 23:07:10.432" endtime="20220206 23:07:10.465"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${RESPOSTA}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220206 01:29:49.411" level="INFO">&lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220206 01:29:49.410" endtime="20220206 01:29:49.411"/>
+<msg timestamp="20220206 23:07:10.473" level="INFO">&lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220206 23:07:10.465" endtime="20220206 23:07:10.473"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${RESPOSTA}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20220206 01:29:49.411" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220206 01:29:49.411" endtime="20220206 01:29:49.411"/>
+<msg timestamp="20220206 23:07:10.473" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220206 23:07:10.473" endtime="20220206 23:07:10.473"/>
 </kw>
-<status status="PASS" starttime="20220206 01:29:49.374" endtime="20220206 01:29:49.411"/>
+<status status="PASS" starttime="20220206 23:07:10.432" endtime="20220206 23:07:10.473"/>
 </kw>
 <kw name="Should Be Equal As Integers" library="BuiltIn">
 <arg>${RESPOSTA.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<msg timestamp="20220206 01:29:49.412" level="INFO">Argument types are:
+<msg timestamp="20220206 23:07:10.473" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20220206 01:29:49.411" endtime="20220206 01:29:49.412"/>
+<status status="PASS" starttime="20220206 23:07:10.473" endtime="20220206 23:07:10.473"/>
 </kw>
 <kw name="Dictionary Should Contain Key" library="Collections">
 <arg>${RESPOSTA.json()}</arg>
 <arg>data</arg>
 <doc>Fails if ``key`` is not found from ``dictionary``.</doc>
-<status status="PASS" starttime="20220206 01:29:49.412" endtime="20220206 01:29:49.413"/>
+<status status="PASS" starttime="20220206 23:07:10.473" endtime="20220206 23:07:10.473"/>
 </kw>
 <kw name="Dictionary Should Contain Item" library="Collections">
 <arg>${RESPOSTA.json()["data"]}</arg>
 <arg>id</arg>
 <arg>2</arg>
 <doc>An item of ``key`` / ``value`` must be found in a ``dictionary``.</doc>
-<status status="PASS" starttime="20220206 01:29:49.413" endtime="20220206 01:29:49.414"/>
+<status status="PASS" starttime="20220206 23:07:10.473" endtime="20220206 23:07:10.473"/>
 </kw>
 <kw name="Dictionary Should Contain Item" library="Collections">
 <arg>${RESPOSTA.json()["data"]}</arg>
 <arg>email</arg>
 <arg>janet.weaver@reqres.in</arg>
 <doc>An item of ``key`` / ``value`` must be found in a ``dictionary``.</doc>
-<status status="PASS" starttime="20220206 01:29:49.414" endtime="20220206 01:29:49.414"/>
+<status status="PASS" starttime="20220206 23:07:10.473" endtime="20220206 23:07:10.481"/>
 </kw>
 <kw name="Dictionary Should Contain Item" library="Collections">
 <arg>${RESPOSTA.json()["data"]}</arg>
 <arg>first_name</arg>
 <arg>Janet</arg>
 <doc>An item of ``key`` / ``value`` must be found in a ``dictionary``.</doc>
-<status status="PASS" starttime="20220206 01:29:49.414" endtime="20220206 01:29:49.415"/>
+<status status="PASS" starttime="20220206 23:07:10.481" endtime="20220206 23:07:10.481"/>
 </kw>
 <kw name="Dictionary Should Contain Item" library="Collections">
 <arg>${RESPOSTA.json()["data"]}</arg>
 <arg>last_name</arg>
 <arg>Weaver</arg>
 <doc>An item of ``key`` / ``value`` must be found in a ``dictionary``.</doc>
-<status status="PASS" starttime="20220206 01:29:49.415" endtime="20220206 01:29:49.415"/>
+<status status="PASS" starttime="20220206 23:07:10.481" endtime="20220206 23:07:10.481"/>
 </kw>
 <kw name="Dictionary Should Contain Item" library="Collections">
 <arg>${RESPOSTA.json()["data"]}</arg>
 <arg>avatar</arg>
 <arg>https://reqres.in/img/faces/2-image.jpg</arg>
 <doc>An item of ``key`` / ``value`` must be found in a ``dictionary``.</doc>
-<status status="PASS" starttime="20220206 01:29:49.415" endtime="20220206 01:29:49.416"/>
+<status status="PASS" starttime="20220206 23:07:10.481" endtime="20220206 23:07:10.481"/>
 </kw>
 <kw name="Dictionary Should Contain Key" library="Collections">
 <arg>${RESPOSTA.json()}</arg>
 <arg>support</arg>
 <doc>Fails if ``key`` is not found from ``dictionary``.</doc>
-<status status="PASS" starttime="20220206 01:29:49.416" endtime="20220206 01:29:49.416"/>
+<status status="PASS" starttime="20220206 23:07:10.481" endtime="20220206 23:07:10.481"/>
 </kw>
 <kw name="Dictionary Should Contain Item" library="Collections">
 <arg>${RESPOSTA.json()["support"]}</arg>
 <arg>url</arg>
 <arg>https://reqres.in/#support-heading</arg>
 <doc>An item of ``key`` / ``value`` must be found in a ``dictionary``.</doc>
-<status status="PASS" starttime="20220206 01:29:49.416" endtime="20220206 01:29:49.417"/>
+<status status="PASS" starttime="20220206 23:07:10.481" endtime="20220206 23:07:10.489"/>
 </kw>
 <kw name="Dictionary Should Contain Item" library="Collections">
 <arg>${RESPOSTA.json()["support"]}</arg>
 <arg>text</arg>
 <arg>To keep ReqRes free, contributions towards server costs are appreciated!</arg>
 <doc>An item of ``key`` / ``value`` must be found in a ``dictionary``.</doc>
-<status status="PASS" starttime="20220206 01:29:49.417" endtime="20220206 01:29:49.418"/>
+<status status="PASS" starttime="20220206 23:07:10.489" endtime="20220206 23:07:10.489"/>
 </kw>
-<status status="PASS" starttime="20220206 01:29:49.374" endtime="20220206 01:29:49.418"/>
+<status status="PASS" starttime="20220206 23:07:10.424" endtime="20220206 23:07:10.489"/>
 </kw>
-<status status="PASS" starttime="20220206 01:29:07.180" endtime="20220206 01:29:49.419"/>
+<status status="PASS" starttime="20220206 23:06:28.208" endtime="20220206 23:07:10.489"/>
 </test>
-<status status="PASS" starttime="20220206 01:27:40.482" endtime="20220206 01:29:49.421"/>
+<test id="s1-t4" name="TC04: Atualizar usuario no sistema">
+<kw name="Conectar a API" library="resourseProjectoABC" type="SETUP">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>TesteApi</arg>
+<arg>${URL_API}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20220206 23:07:10.489" level="INFO">Creating Session using : alias=TesteApi, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20220206 23:07:10.489" endtime="20220206 23:07:10.497"/>
+</kw>
+<status status="PASS" starttime="20220206 23:07:10.489" endtime="20220206 23:07:10.497"/>
+</kw>
+<kw name="Realizar a atualização do nome e trabalho do usuário para o id &quot;2&quot;" library="resourseProjectoABC" sourcename="Realizar a atualização do nome e trabalho do usuário para o id &quot;${ID}&quot;">
+<kw name="Criar usuario para o sistema" library="resourseProjectoABC">
+<kw name="Name" library="FakerLibrary">
+<var>${RANDOM_NOME}</var>
+<doc>:example 'John Doe'</doc>
+<msg timestamp="20220206 23:07:10.497" level="INFO">${RANDOM_NOME} = Luana da Luz</msg>
+<status status="PASS" starttime="20220206 23:07:10.497" endtime="20220206 23:07:10.497"/>
+</kw>
+<kw name="Job" library="FakerLibrary">
+<var>${RANDOM_JOB}</var>
+<msg timestamp="20220206 23:07:10.497" level="INFO">${RANDOM_JOB} = Investigador particular</msg>
+<status status="PASS" starttime="20220206 23:07:10.497" endtime="20220206 23:07:10.497"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${USUARIO}</var>
+<arg>Nome=${RANDOM_NOME}</arg>
+<arg>Job=${RANDOM_JOB}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220206 23:07:10.497" level="INFO">${USUARIO} = {'Nome': 'Luana da Luz', 'Job': 'Investigador particular'}</msg>
+<status status="PASS" starttime="20220206 23:07:10.497" endtime="20220206 23:07:10.497"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${USUARIO}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:07:10.497" level="INFO">${USUARIO} = {'Nome': 'Luana da Luz', 'Job': 'Investigador particular'}</msg>
+<status status="PASS" starttime="20220206 23:07:10.497" endtime="20220206 23:07:10.497"/>
+</kw>
+<status status="PASS" starttime="20220206 23:07:10.497" endtime="20220206 23:07:10.497"/>
+</kw>
+<kw name="Criar header para a chamadas" library="resourseProjectoABC">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${HEADER}</var>
+<arg>Content-Type=${CONTENT_TYPE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220206 23:07:10.497" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:07:10.497" endtime="20220206 23:07:10.497"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${HEADER}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:07:10.505" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:07:10.497" endtime="20220206 23:07:10.505"/>
+</kw>
+<status status="PASS" starttime="20220206 23:07:10.497" endtime="20220206 23:07:10.505"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${BODY}</var>
+<arg>nome=${USUARIO.Nome}</arg>
+<arg>job=${USUARIO.Job}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220206 23:07:10.505" level="INFO">${BODY} = {'nome': 'Luana da Luz', 'job': 'Investigador particular'}</msg>
+<status status="PASS" starttime="20220206 23:07:10.505" endtime="20220206 23:07:10.505"/>
+</kw>
+<kw name="PUT On Session" library="RequestsLibrary">
+<var>${RESPOSTA}</var>
+<arg>TesteAPI</arg>
+<arg>${PUT_USUARIO}${ID}</arg>
+<arg>json=${BODY}</arg>
+<arg>headers=${HEADER}</arg>
+<doc>Sends a PUT request on a previously created HTTP Session.</doc>
+<msg timestamp="20220206 23:07:53.106" level="INFO">PUT Request : url=https://reqres.in/api/users/2 
+ path_url=/api/users/2 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '58'} 
+ body=b'{"nome": "Luana da Luz", "job": "Investigador particular"}' 
+ </msg>
+<msg timestamp="20220206 23:07:53.106" level="INFO">PUT Response : url=https://reqres.in/api/users/2 
+ status=200, reason=OK 
+ headers={'Date': 'Mon, 07 Feb 2022 02:08:19 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"5e-YoAziu4WmcHO7h0Q+6RMPLSGyqg"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=q2HvVGXfZouPF%2F1WX8Cb4UbJK7M%2F7x3amZM2xjYxq08XAslqEvkkyJC%2FWcqL55dsjDzfhzqTq8YYVnw4CrxL39mZ%2FOFFSrUf89hU%2F%2BGCA9EcG0hIyD6cAXY7Lj0%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '6d9911d7ba014d35-GRU', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body={"nome":"Luana da Luz","job":"Investigador particular","updatedAt":"2022-02-07T02:08:19.481Z"} 
+ </msg>
+<msg timestamp="20220206 23:07:53.106" level="INFO">C:\Users\LFSpanhol\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20220206 23:07:53.106" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220206 23:07:10.505" endtime="20220206 23:07:53.106"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${RESPOSTA}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220206 23:07:53.114" level="INFO">&lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220206 23:07:53.114" endtime="20220206 23:07:53.114"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${RESPOSTA}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:07:53.114" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220206 23:07:53.114" endtime="20220206 23:07:53.114"/>
+</kw>
+<status status="PASS" starttime="20220206 23:07:10.497" endtime="20220206 23:07:53.114"/>
+</kw>
+<kw name="Teste: Validar alteração do usuário do sistema" library="resourseProjectoABC">
+<kw name="Realizar a atualização do nome e trabalho do usuário para o id &quot;2&quot;" library="resourseProjectoABC" sourcename="Realizar a atualização do nome e trabalho do usuário para o id &quot;${ID}&quot;">
+<kw name="Criar usuario para o sistema" library="resourseProjectoABC">
+<kw name="Name" library="FakerLibrary">
+<var>${RANDOM_NOME}</var>
+<doc>:example 'John Doe'</doc>
+<msg timestamp="20220206 23:07:53.114" level="INFO">${RANDOM_NOME} = Thiago Moura</msg>
+<status status="PASS" starttime="20220206 23:07:53.114" endtime="20220206 23:07:53.114"/>
+</kw>
+<kw name="Job" library="FakerLibrary">
+<var>${RANDOM_JOB}</var>
+<msg timestamp="20220206 23:07:53.114" level="INFO">${RANDOM_JOB} = Agente penitenciário</msg>
+<status status="PASS" starttime="20220206 23:07:53.114" endtime="20220206 23:07:53.114"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${USUARIO}</var>
+<arg>Nome=${RANDOM_NOME}</arg>
+<arg>Job=${RANDOM_JOB}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220206 23:07:53.122" level="INFO">${USUARIO} = {'Nome': 'Thiago Moura', 'Job': 'Agente penitenciário'}</msg>
+<status status="PASS" starttime="20220206 23:07:53.122" endtime="20220206 23:07:53.122"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${USUARIO}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:07:53.122" level="INFO">${USUARIO} = {'Nome': 'Thiago Moura', 'Job': 'Agente penitenciário'}</msg>
+<status status="PASS" starttime="20220206 23:07:53.122" endtime="20220206 23:07:53.122"/>
+</kw>
+<status status="PASS" starttime="20220206 23:07:53.114" endtime="20220206 23:07:53.122"/>
+</kw>
+<kw name="Criar header para a chamadas" library="resourseProjectoABC">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${HEADER}</var>
+<arg>Content-Type=${CONTENT_TYPE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220206 23:07:53.122" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:07:53.122" endtime="20220206 23:07:53.122"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${HEADER}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:07:53.122" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:07:53.122" endtime="20220206 23:07:53.122"/>
+</kw>
+<status status="PASS" starttime="20220206 23:07:53.122" endtime="20220206 23:07:53.122"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${BODY}</var>
+<arg>nome=${USUARIO.Nome}</arg>
+<arg>job=${USUARIO.Job}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220206 23:07:53.132" level="INFO">${BODY} = {'nome': 'Thiago Moura', 'job': 'Agente penitenciário'}</msg>
+<status status="PASS" starttime="20220206 23:07:53.122" endtime="20220206 23:07:53.132"/>
+</kw>
+<kw name="PUT On Session" library="RequestsLibrary">
+<var>${RESPOSTA}</var>
+<arg>TesteAPI</arg>
+<arg>${PUT_USUARIO}${ID}</arg>
+<arg>json=${BODY}</arg>
+<arg>headers=${HEADER}</arg>
+<doc>Sends a PUT request on a previously created HTTP Session.</doc>
+<msg timestamp="20220206 23:07:53.590" level="INFO">PUT Request : url=https://reqres.in/api/users/2 
+ path_url=/api/users/2 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '60'} 
+ body=b'{"nome": "Thiago Moura", "job": "Agente penitenci\\u00e1rio"}' 
+ </msg>
+<msg timestamp="20220206 23:07:53.590" level="INFO">PUT Response : url=https://reqres.in/api/users/2 
+ status=200, reason=OK 
+ headers={'Date': 'Mon, 07 Feb 2022 02:08:20 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"5c-szwjuwRLf045XeWbxzoPXsI93/E"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=4LH6Uyb%2BDCm2wkL%2FRdRccW5nFpbrlWjm5CIF8GzgYcnIaN4kZzWHlIOBtuQQ183jmzHFw5ss8pz%2BbuvfPnxq%2BFFk0UvPxmrcO7uZJVMwIraMQwrTN6IWKzFo95M%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '6d9911daae744d35-GRU', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body={"nome":"Thiago Moura","job":"Agente penitenciário","updatedAt":"2022-02-07T02:08:19.954Z"} 
+ </msg>
+<msg timestamp="20220206 23:07:53.590" level="INFO">C:\Users\LFSpanhol\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20220206 23:07:53.593" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220206 23:07:53.132" endtime="20220206 23:07:53.593"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${RESPOSTA}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220206 23:07:53.593" level="INFO">&lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220206 23:07:53.593" endtime="20220206 23:07:53.593"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${RESPOSTA}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:07:53.595" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220206 23:07:53.593" endtime="20220206 23:07:53.596"/>
+</kw>
+<status status="PASS" starttime="20220206 23:07:53.114" endtime="20220206 23:07:53.596"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${RESPOSTA.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<msg timestamp="20220206 23:07:53.598" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" starttime="20220206 23:07:53.597" endtime="20220206 23:07:53.599"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${RESPOSTA.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220206 23:07:53.599" level="INFO">{'nome': 'Thiago Moura', 'job': 'Agente penitenciário', 'updatedAt': '2022-02-07T02:08:19.954Z'}</msg>
+<status status="PASS" starttime="20220206 23:07:53.599" endtime="20220206 23:07:53.599"/>
+</kw>
+<status status="PASS" starttime="20220206 23:07:53.114" endtime="20220206 23:07:53.599"/>
+</kw>
+<status status="PASS" starttime="20220206 23:07:10.489" endtime="20220206 23:07:53.599"/>
+</test>
+<test id="s1-t5" name="TC05: Excluir um usuário cadastrado no sistema">
+<kw name="Conectar a API" library="resourseProjectoABC" type="SETUP">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>TesteApi</arg>
+<arg>${URL_API}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20220206 23:07:53.606" level="INFO">Creating Session using : alias=TesteApi, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20220206 23:07:53.606" endtime="20220206 23:07:53.606"/>
+</kw>
+<status status="PASS" starttime="20220206 23:07:53.606" endtime="20220206 23:07:53.606"/>
+</kw>
+<kw name="Cadastrar um novo usuário no sistema e identificar o Id do usuário" library="resourseProjectoABC">
+<kw name="Cadastrar um usuário no sistema" library="resourseProjectoABC">
+<kw name="Criar usuario para o sistema" library="resourseProjectoABC">
+<kw name="Name" library="FakerLibrary">
+<var>${RANDOM_NOME}</var>
+<doc>:example 'John Doe'</doc>
+<msg timestamp="20220206 23:07:53.616" level="INFO">${RANDOM_NOME} = Dr. Benjamin Castro</msg>
+<status status="PASS" starttime="20220206 23:07:53.616" endtime="20220206 23:07:53.616"/>
+</kw>
+<kw name="Job" library="FakerLibrary">
+<var>${RANDOM_JOB}</var>
+<msg timestamp="20220206 23:07:53.616" level="INFO">${RANDOM_JOB} = Projetista mecânico</msg>
+<status status="PASS" starttime="20220206 23:07:53.616" endtime="20220206 23:07:53.616"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${USUARIO}</var>
+<arg>Nome=${RANDOM_NOME}</arg>
+<arg>Job=${RANDOM_JOB}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220206 23:07:53.616" level="INFO">${USUARIO} = {'Nome': 'Dr. Benjamin Castro', 'Job': 'Projetista mecânico'}</msg>
+<status status="PASS" starttime="20220206 23:07:53.616" endtime="20220206 23:07:53.616"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${USUARIO}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:07:53.616" level="INFO">${USUARIO} = {'Nome': 'Dr. Benjamin Castro', 'Job': 'Projetista mecânico'}</msg>
+<status status="PASS" starttime="20220206 23:07:53.616" endtime="20220206 23:07:53.616"/>
+</kw>
+<status status="PASS" starttime="20220206 23:07:53.613" endtime="20220206 23:07:53.616"/>
+</kw>
+<kw name="Criar header para a chamadas" library="resourseProjectoABC">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${HEADER}</var>
+<arg>Content-Type=${CONTENT_TYPE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220206 23:07:53.616" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:07:53.616" endtime="20220206 23:07:53.616"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${HEADER}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:07:53.616" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:07:53.616" endtime="20220206 23:07:53.616"/>
+</kw>
+<status status="PASS" starttime="20220206 23:07:53.616" endtime="20220206 23:07:53.616"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${BODY}</var>
+<arg>nome=${USUARIO.Nome}</arg>
+<arg>job=${USUARIO.Job}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220206 23:07:53.624" level="INFO">${BODY} = {'nome': 'Dr. Benjamin Castro', 'job': 'Projetista mecânico'}</msg>
+<status status="PASS" starttime="20220206 23:07:53.624" endtime="20220206 23:07:53.624"/>
+</kw>
+<kw name="POST On Session" library="RequestsLibrary">
+<var>${RESPOSTA}</var>
+<arg>TesteApi</arg>
+<arg>${POST_CADASTRO}</arg>
+<arg>json=${BODY}</arg>
+<arg>headers=${HEADER}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<msg timestamp="20220206 23:08:36.244" level="INFO">POST Request : url=https://reqres.in/api/users 
+ path_url=/api/users 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '66'} 
+ body=b'{"nome": "Dr. Benjamin Castro", "job": "Projetista mec\\u00e2nico"}' 
+ </msg>
+<msg timestamp="20220206 23:08:36.244" level="INFO">POST Response : url=https://reqres.in/api/users 
+ status=201, reason=Created 
+ headers={'Date': 'Mon, 07 Feb 2022 02:09:02 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '109', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"6d-DqM1XGczq5YEn1Pg2ViCti5M+pw"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=yUdxSBzdwW5h04GlduVfhQwX2ab7qg7yMTPfTUheM5gPu08UvjO%2FvuLF8vr02fIPAsoq7APnOXFc%2B0Ixu9mhMAdZ7rOT0fzc7%2Bo7WpOxFtWftZUkr7uVN9MG8g8%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6d9912e51de37974-GRU', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body={"nome":"Dr. Benjamin Castro","job":"Projetista mecânico","id":"904","createdAt":"2022-02-07T02:09:02.587Z"} 
+ </msg>
+<msg timestamp="20220206 23:08:36.244" level="INFO">C:\Users\LFSpanhol\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20220206 23:08:36.252" level="INFO">${RESPOSTA} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20220206 23:07:53.624" endtime="20220206 23:08:36.252"/>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<var>${ID_USUARIO}</var>
+<arg>${RESPOSTA.json()}</arg>
+<arg>id</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<msg timestamp="20220206 23:08:36.252" level="INFO">${ID_USUARIO} = 904</msg>
+<status status="PASS" starttime="20220206 23:08:36.252" endtime="20220206 23:08:36.252"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${ID_USUARIO}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220206 23:08:36.252" level="INFO">904</msg>
+<status status="PASS" starttime="20220206 23:08:36.252" endtime="20220206 23:08:36.252"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${RESPOSTA}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220206 23:08:36.252" level="INFO">&lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20220206 23:08:36.252" endtime="20220206 23:08:36.252"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${RESPOSTA}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:08:36.260" level="INFO">${RESPOSTA} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20220206 23:08:36.252" endtime="20220206 23:08:36.260"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${ID_USUARIO}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:08:36.262" level="INFO">${ID_USUARIO} = 904</msg>
+<status status="PASS" starttime="20220206 23:08:36.260" endtime="20220206 23:08:36.262"/>
+</kw>
+<status status="PASS" starttime="20220206 23:07:53.613" endtime="20220206 23:08:36.262"/>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<var>${RESP_CAD}</var>
+<arg>${RESPOSTA.json()}</arg>
+<arg>id</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<msg timestamp="20220206 23:08:36.264" level="INFO">${RESP_CAD} = 904</msg>
+<status status="PASS" starttime="20220206 23:08:36.262" endtime="20220206 23:08:36.264"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${RESP_CAD}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220206 23:08:36.266" level="INFO">904</msg>
+<status status="PASS" starttime="20220206 23:08:36.265" endtime="20220206 23:08:36.266"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${RESP_CAD}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:08:36.267" level="INFO">${RESP_CAD} = 904</msg>
+<status status="PASS" starttime="20220206 23:08:36.266" endtime="20220206 23:08:36.267"/>
+</kw>
+<status status="PASS" starttime="20220206 23:07:53.613" endtime="20220206 23:08:36.267"/>
+</kw>
+<kw name="Deletar o usuário pelo seu id cadastrado" library="resourseProjectoABC">
+<kw name="Cadastrar um novo usuário no sistema e identificar o Id do usuário" library="resourseProjectoABC">
+<kw name="Cadastrar um usuário no sistema" library="resourseProjectoABC">
+<kw name="Criar usuario para o sistema" library="resourseProjectoABC">
+<kw name="Name" library="FakerLibrary">
+<var>${RANDOM_NOME}</var>
+<doc>:example 'John Doe'</doc>
+<msg timestamp="20220206 23:08:36.290" level="INFO">${RANDOM_NOME} = Kaique Silva</msg>
+<status status="PASS" starttime="20220206 23:08:36.272" endtime="20220206 23:08:36.290"/>
+</kw>
+<kw name="Job" library="FakerLibrary">
+<var>${RANDOM_JOB}</var>
+<msg timestamp="20220206 23:08:36.290" level="INFO">${RANDOM_JOB} = Guincheiro</msg>
+<status status="PASS" starttime="20220206 23:08:36.290" endtime="20220206 23:08:36.290"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${USUARIO}</var>
+<arg>Nome=${RANDOM_NOME}</arg>
+<arg>Job=${RANDOM_JOB}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220206 23:08:36.290" level="INFO">${USUARIO} = {'Nome': 'Kaique Silva', 'Job': 'Guincheiro'}</msg>
+<status status="PASS" starttime="20220206 23:08:36.290" endtime="20220206 23:08:36.290"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${USUARIO}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:08:36.290" level="INFO">${USUARIO} = {'Nome': 'Kaique Silva', 'Job': 'Guincheiro'}</msg>
+<status status="PASS" starttime="20220206 23:08:36.290" endtime="20220206 23:08:36.290"/>
+</kw>
+<status status="PASS" starttime="20220206 23:08:36.271" endtime="20220206 23:08:36.299"/>
+</kw>
+<kw name="Criar header para a chamadas" library="resourseProjectoABC">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${HEADER}</var>
+<arg>Content-Type=${CONTENT_TYPE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220206 23:08:36.299" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:08:36.299" endtime="20220206 23:08:36.299"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${HEADER}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:08:36.299" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:08:36.299" endtime="20220206 23:08:36.299"/>
+</kw>
+<status status="PASS" starttime="20220206 23:08:36.299" endtime="20220206 23:08:36.299"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${BODY}</var>
+<arg>nome=${USUARIO.Nome}</arg>
+<arg>job=${USUARIO.Job}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220206 23:08:36.299" level="INFO">${BODY} = {'nome': 'Kaique Silva', 'job': 'Guincheiro'}</msg>
+<status status="PASS" starttime="20220206 23:08:36.299" endtime="20220206 23:08:36.299"/>
+</kw>
+<kw name="POST On Session" library="RequestsLibrary">
+<var>${RESPOSTA}</var>
+<arg>TesteApi</arg>
+<arg>${POST_CADASTRO}</arg>
+<arg>json=${BODY}</arg>
+<arg>headers=${HEADER}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<msg timestamp="20220206 23:08:36.757" level="INFO">POST Request : url=https://reqres.in/api/users 
+ path_url=/api/users 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '45'} 
+ body=b'{"nome": "Kaique Silva", "job": "Guincheiro"}' 
+ </msg>
+<msg timestamp="20220206 23:08:36.757" level="INFO">POST Response : url=https://reqres.in/api/users 
+ status=201, reason=Created 
+ headers={'Date': 'Mon, 07 Feb 2022 02:09:03 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '92', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"5c-xL+CPMuxbm+BTigy1f95D4DhVIo"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=m4VIUcT8swf1yL0UbJmelIWDLRrfCgObtl16zLyYUeTBrGNO1fgrOp%2FT5k9asM%2BaWAaKxQ4LRLe60YtXjmRS1vLNrFGNvFKpl3NlnKJLprILqob2nFUGmuZ5pUs%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6d9912e87ca47974-GRU', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body={"nome":"Kaique Silva","job":"Guincheiro","id":"193","createdAt":"2022-02-07T02:09:03.116Z"} 
+ </msg>
+<msg timestamp="20220206 23:08:36.757" level="INFO">C:\Users\LFSpanhol\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20220206 23:08:36.765" level="INFO">${RESPOSTA} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20220206 23:08:36.299" endtime="20220206 23:08:36.765"/>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<var>${ID_USUARIO}</var>
+<arg>${RESPOSTA.json()}</arg>
+<arg>id</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<msg timestamp="20220206 23:08:36.766" level="INFO">${ID_USUARIO} = 193</msg>
+<status status="PASS" starttime="20220206 23:08:36.765" endtime="20220206 23:08:36.766"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${ID_USUARIO}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220206 23:08:36.766" level="INFO">193</msg>
+<status status="PASS" starttime="20220206 23:08:36.766" endtime="20220206 23:08:36.766"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${RESPOSTA}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220206 23:08:36.766" level="INFO">&lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20220206 23:08:36.766" endtime="20220206 23:08:36.766"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${RESPOSTA}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:08:36.767" level="INFO">${RESPOSTA} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20220206 23:08:36.767" endtime="20220206 23:08:36.767"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${ID_USUARIO}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:08:36.767" level="INFO">${ID_USUARIO} = 193</msg>
+<status status="PASS" starttime="20220206 23:08:36.767" endtime="20220206 23:08:36.767"/>
+</kw>
+<status status="PASS" starttime="20220206 23:08:36.271" endtime="20220206 23:08:36.767"/>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<var>${RESP_CAD}</var>
+<arg>${RESPOSTA.json()}</arg>
+<arg>id</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<msg timestamp="20220206 23:08:36.767" level="INFO">${RESP_CAD} = 193</msg>
+<status status="PASS" starttime="20220206 23:08:36.767" endtime="20220206 23:08:36.767"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${RESP_CAD}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220206 23:08:36.767" level="INFO">193</msg>
+<status status="PASS" starttime="20220206 23:08:36.767" endtime="20220206 23:08:36.767"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${RESP_CAD}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:08:36.767" level="INFO">${RESP_CAD} = 193</msg>
+<status status="PASS" starttime="20220206 23:08:36.767" endtime="20220206 23:08:36.767"/>
+</kw>
+<status status="PASS" starttime="20220206 23:08:36.269" endtime="20220206 23:08:36.767"/>
+</kw>
+<kw name="Criar header para a chamadas" library="resourseProjectoABC">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${HEADER}</var>
+<arg>Content-Type=${CONTENT_TYPE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220206 23:08:36.770" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:08:36.767" endtime="20220206 23:08:36.770"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${HEADER}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:08:36.770" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:08:36.770" endtime="20220206 23:08:36.771"/>
+</kw>
+<status status="PASS" starttime="20220206 23:08:36.767" endtime="20220206 23:08:36.771"/>
+</kw>
+<kw name="DELETE On Session" library="RequestsLibrary">
+<var>${RESP_DELETE}</var>
+<arg>TesteAPI</arg>
+<arg>${DEL_USUARIO}${RESP_CAD}</arg>
+<arg>headers=${HEADER}</arg>
+<doc>Sends a DELETE request on a previously created HTTP Session.</doc>
+<msg timestamp="20220206 23:08:37.240" level="INFO">DELETE Request : url=https://reqres.in/api/users/193 
+ path_url=/api/users/193 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg timestamp="20220206 23:08:37.240" level="INFO">DELETE Response : url=https://reqres.in/api/users/193 
+ status=204, reason=No Content 
+ headers={'Date': 'Mon, 07 Feb 2022 02:09:03 GMT', 'Content-Length': '0', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Obx%2FzV06v%2B9Cc2EW%2F4fy2xuaNX%2Brio8Oo5Pc6TK%2BZEt2kEHeZe%2FjLXQx0S9yYEEFgr%2BImbK4F%2Bd4T3FRkOVcBNSvxfrci2vhc28iOakZk8uVfyV5P%2FXlTPtS6Ks%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6d9912eb6a727974-GRU', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body=None 
+ </msg>
+<msg timestamp="20220206 23:08:37.240" level="INFO">C:\Users\LFSpanhol\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20220206 23:08:37.240" level="INFO">${RESP_DELETE} = &lt;Response [204]&gt;</msg>
+<status status="PASS" starttime="20220206 23:08:36.771" endtime="20220206 23:08:37.240"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${RESPOSTA.content}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220206 23:08:37.244" level="INFO">{"nome":"Kaique Silva","job":"Guincheiro","id":"193","createdAt":"2022-02-07T02:09:03.116Z"}</msg>
+<status status="PASS" starttime="20220206 23:08:37.244" endtime="20220206 23:08:37.244"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${RESP_DELETE}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:08:37.244" level="INFO">${RESP_DELETE} = &lt;Response [204]&gt;</msg>
+<status status="PASS" starttime="20220206 23:08:37.244" endtime="20220206 23:08:37.244"/>
+</kw>
+<status status="PASS" starttime="20220206 23:08:36.268" endtime="20220206 23:08:37.244"/>
+</kw>
+<kw name="Teste: Validar usuário excluido pelo status code &quot;204&quot;" library="resourseProjectoABC" sourcename="Teste: Validar usuário excluido pelo status code &quot;${STATUS_CODE}&quot;">
+<kw name="Deletar o usuário pelo seu id cadastrado" library="resourseProjectoABC">
+<kw name="Cadastrar um novo usuário no sistema e identificar o Id do usuário" library="resourseProjectoABC">
+<kw name="Cadastrar um usuário no sistema" library="resourseProjectoABC">
+<kw name="Criar usuario para o sistema" library="resourseProjectoABC">
+<kw name="Name" library="FakerLibrary">
+<var>${RANDOM_NOME}</var>
+<doc>:example 'John Doe'</doc>
+<msg timestamp="20220206 23:08:37.253" level="INFO">${RANDOM_NOME} = Davi Mendes</msg>
+<status status="PASS" starttime="20220206 23:08:37.244" endtime="20220206 23:08:37.253"/>
+</kw>
+<kw name="Job" library="FakerLibrary">
+<var>${RANDOM_JOB}</var>
+<msg timestamp="20220206 23:08:37.253" level="INFO">${RANDOM_JOB} = Sacoleira</msg>
+<status status="PASS" starttime="20220206 23:08:37.253" endtime="20220206 23:08:37.253"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${USUARIO}</var>
+<arg>Nome=${RANDOM_NOME}</arg>
+<arg>Job=${RANDOM_JOB}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220206 23:08:37.253" level="INFO">${USUARIO} = {'Nome': 'Davi Mendes', 'Job': 'Sacoleira'}</msg>
+<status status="PASS" starttime="20220206 23:08:37.253" endtime="20220206 23:08:37.253"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${USUARIO}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:08:37.253" level="INFO">${USUARIO} = {'Nome': 'Davi Mendes', 'Job': 'Sacoleira'}</msg>
+<status status="PASS" starttime="20220206 23:08:37.253" endtime="20220206 23:08:37.253"/>
+</kw>
+<status status="PASS" starttime="20220206 23:08:37.244" endtime="20220206 23:08:37.253"/>
+</kw>
+<kw name="Criar header para a chamadas" library="resourseProjectoABC">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${HEADER}</var>
+<arg>Content-Type=${CONTENT_TYPE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220206 23:08:37.259" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:08:37.253" endtime="20220206 23:08:37.259"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${HEADER}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:08:37.259" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:08:37.259" endtime="20220206 23:08:37.259"/>
+</kw>
+<status status="PASS" starttime="20220206 23:08:37.253" endtime="20220206 23:08:37.259"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${BODY}</var>
+<arg>nome=${USUARIO.Nome}</arg>
+<arg>job=${USUARIO.Job}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220206 23:08:37.259" level="INFO">${BODY} = {'nome': 'Davi Mendes', 'job': 'Sacoleira'}</msg>
+<status status="PASS" starttime="20220206 23:08:37.259" endtime="20220206 23:08:37.259"/>
+</kw>
+<kw name="POST On Session" library="RequestsLibrary">
+<var>${RESPOSTA}</var>
+<arg>TesteApi</arg>
+<arg>${POST_CADASTRO}</arg>
+<arg>json=${BODY}</arg>
+<arg>headers=${HEADER}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<msg timestamp="20220206 23:08:37.754" level="INFO">POST Request : url=https://reqres.in/api/users 
+ path_url=/api/users 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '43'} 
+ body=b'{"nome": "Davi Mendes", "job": "Sacoleira"}' 
+ </msg>
+<msg timestamp="20220206 23:08:37.754" level="INFO">POST Response : url=https://reqres.in/api/users 
+ status=201, reason=Created 
+ headers={'Date': 'Mon, 07 Feb 2022 02:09:04 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '90', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"5a-BIiAOTAckl80iSjbmT03wgtggfc"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=tx%2FftpYpKV4f%2FjhwxFaCs%2BiQcRYe74GUHmF2EznpB7S3imffQN8yGfcQ6IfCpXXYe30A3IdbHspIm5yBVIun9JoqqELpig2Y%2BgYFqH1nwtXAe%2BkhzGfUZyv4VMM%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6d9912ee8ffb7974-GRU', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body={"nome":"Davi Mendes","job":"Sacoleira","id":"656","createdAt":"2022-02-07T02:09:04.101Z"} 
+ </msg>
+<msg timestamp="20220206 23:08:37.754" level="INFO">C:\Users\LFSpanhol\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20220206 23:08:37.754" level="INFO">${RESPOSTA} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20220206 23:08:37.259" endtime="20220206 23:08:37.754"/>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<var>${ID_USUARIO}</var>
+<arg>${RESPOSTA.json()}</arg>
+<arg>id</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<msg timestamp="20220206 23:08:37.754" level="INFO">${ID_USUARIO} = 656</msg>
+<status status="PASS" starttime="20220206 23:08:37.754" endtime="20220206 23:08:37.754"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${ID_USUARIO}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220206 23:08:37.754" level="INFO">656</msg>
+<status status="PASS" starttime="20220206 23:08:37.754" endtime="20220206 23:08:37.754"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${RESPOSTA}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220206 23:08:37.754" level="INFO">&lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20220206 23:08:37.754" endtime="20220206 23:08:37.754"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${RESPOSTA}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:08:37.758" level="INFO">${RESPOSTA} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20220206 23:08:37.754" endtime="20220206 23:08:37.758"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${ID_USUARIO}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:08:37.759" level="INFO">${ID_USUARIO} = 656</msg>
+<status status="PASS" starttime="20220206 23:08:37.758" endtime="20220206 23:08:37.759"/>
+</kw>
+<status status="PASS" starttime="20220206 23:08:37.244" endtime="20220206 23:08:37.759"/>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<var>${RESP_CAD}</var>
+<arg>${RESPOSTA.json()}</arg>
+<arg>id</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<msg timestamp="20220206 23:08:37.759" level="INFO">${RESP_CAD} = 656</msg>
+<status status="PASS" starttime="20220206 23:08:37.759" endtime="20220206 23:08:37.759"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${RESP_CAD}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220206 23:08:37.759" level="INFO">656</msg>
+<status status="PASS" starttime="20220206 23:08:37.759" endtime="20220206 23:08:37.759"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${RESP_CAD}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:08:37.759" level="INFO">${RESP_CAD} = 656</msg>
+<status status="PASS" starttime="20220206 23:08:37.759" endtime="20220206 23:08:37.759"/>
+</kw>
+<status status="PASS" starttime="20220206 23:08:37.244" endtime="20220206 23:08:37.759"/>
+</kw>
+<kw name="Criar header para a chamadas" library="resourseProjectoABC">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${HEADER}</var>
+<arg>Content-Type=${CONTENT_TYPE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220206 23:08:37.759" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:08:37.759" endtime="20220206 23:08:37.759"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${HEADER}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:08:37.759" level="INFO">${HEADER} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20220206 23:08:37.759" endtime="20220206 23:08:37.759"/>
+</kw>
+<status status="PASS" starttime="20220206 23:08:37.759" endtime="20220206 23:08:37.759"/>
+</kw>
+<kw name="DELETE On Session" library="RequestsLibrary">
+<var>${RESP_DELETE}</var>
+<arg>TesteAPI</arg>
+<arg>${DEL_USUARIO}${RESP_CAD}</arg>
+<arg>headers=${HEADER}</arg>
+<doc>Sends a DELETE request on a previously created HTTP Session.</doc>
+<msg timestamp="20220206 23:08:38.211" level="INFO">DELETE Request : url=https://reqres.in/api/users/656 
+ path_url=/api/users/656 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg timestamp="20220206 23:08:38.211" level="INFO">DELETE Response : url=https://reqres.in/api/users/656 
+ status=204, reason=No Content 
+ headers={'Date': 'Mon, 07 Feb 2022 02:09:04 GMT', 'Content-Length': '0', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ILbJqoKh17qZZ085OeZFcyJ7pEAxa9349b7KPHCjFDSohP9%2BQ6Ym%2BzPQujD5v50WsKbjAq3DajXYgwYoiMUZbSdbf13iv0fs70yvRlHWthsa%2BsMevU7USzeToK8%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6d9912f1ce137974-GRU', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body=None 
+ </msg>
+<msg timestamp="20220206 23:08:38.211" level="INFO">C:\Users\LFSpanhol\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20220206 23:08:38.211" level="INFO">${RESP_DELETE} = &lt;Response [204]&gt;</msg>
+<status status="PASS" starttime="20220206 23:08:37.759" endtime="20220206 23:08:38.211"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${RESPOSTA.content}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220206 23:08:38.219" level="INFO">{"nome":"Davi Mendes","job":"Sacoleira","id":"656","createdAt":"2022-02-07T02:09:04.101Z"}</msg>
+<status status="PASS" starttime="20220206 23:08:38.211" endtime="20220206 23:08:38.220"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${RESP_DELETE}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220206 23:08:38.220" level="INFO">${RESP_DELETE} = &lt;Response [204]&gt;</msg>
+<status status="PASS" starttime="20220206 23:08:38.220" endtime="20220206 23:08:38.220"/>
+</kw>
+<status status="PASS" starttime="20220206 23:08:37.244" endtime="20220206 23:08:38.220"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${RESP_DELETE.status_code}</arg>
+<arg>${STATUS_CODE}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<msg timestamp="20220206 23:08:38.220" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" starttime="20220206 23:08:38.220" endtime="20220206 23:08:38.220"/>
+</kw>
+<status status="PASS" starttime="20220206 23:08:37.244" endtime="20220206 23:08:38.220"/>
+</kw>
+<status status="PASS" starttime="20220206 23:07:53.606" endtime="20220206 23:08:38.220"/>
+</test>
+<status status="PASS" starttime="20220206 23:05:01.237" endtime="20220206 23:08:38.220"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="projetoABC">projetoABC</stat>
+<stat pass="5" fail="0" skip="0" id="s1" name="projetoABC">projetoABC</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220206 01:29:07.189" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg timestamp="20220206 01:29:49.377" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20220206 23:06:28.216" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20220206 23:07:10.432" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
 </errors>
 </robot>

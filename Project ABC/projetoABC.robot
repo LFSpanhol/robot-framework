@@ -13,12 +13,17 @@ TC02: Consulta token do usuário
   Teste: validar o retorno do token
 
 TC03: Consulta de usuário cadastro no sistema
-  Consultar um usuário cadastrado no sistema pelo id
+  Consultar um usuário cadastrado no sistema pelo id "2"
   Teste: validar as informações do usuário cadastrado
 
-#TC03: Metodo UPDATE
+TC04: Atualizar usuario no sistema
+  Realizar a atualização do nome e trabalho do usuário para o id "2"
+  Teste: Validar alteração do usuário do sistema
 
-#TC04: Metodo DELETE
+TC05: Excluir um usuário cadastrado no sistema
+  Cadastrar um novo usuário no sistema e identificar o Id do usuário
+  Deletar o usuário pelo seu id cadastrado
+  Teste: Validar usuário excluido pelo status code "204"
 
 #EXEMPLO DE TESTE DETALHADO
 #TC01: Usuario deseja se conectar a consulta de cadastro de endereço pelo CEP
